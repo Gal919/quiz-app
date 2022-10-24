@@ -1,0 +1,12 @@
+@import '../../colors.scss';
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+
+    h1 {
+        text-align: center;
+        color: $color-white;
+    }
+}

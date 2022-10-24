@@ -1,0 +1,23 @@
+@import '../../colors.scss';
+
+.answer {
+  display: flex;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  font-size: 20px;
+}
+
+.answer:hover {
+  transform: scale(1.01);
+  cursor: pointer;
+}
+
+.correct-ans {
+  border-style: solid;
+  border: 2px solid green;
+}
+
+.incorrect-ans {
+  border-style: solid;
+  border: 2px solid red;
+}
