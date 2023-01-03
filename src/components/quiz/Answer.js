@@ -4,19 +4,19 @@ import './Answer.scss';
 
 const Answer = ({text, isCorrect, currentQue}) => {
 
-    const [btnClass, setBtnClass] = useState(null);
+    const [btnClass, setBtnClass] = useState();
 
     const clickHandler = () => {
         setBtnClass(isCorrect ? 'correct-ans' : 'incorrect-ans');
     };
 
     useEffect(() => {
-        setBtnClass(null);
+        setBtnClass();
     },[currentQue]);
 
     return <Card onClick={clickHandler} className={`answer ${btnClass}`} >
         <p>{text}</p>
     </Card>
-}
+};
 
 export default Answer;
